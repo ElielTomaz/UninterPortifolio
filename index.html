@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio>>>Eliel Tomaz</title>  <!--Título da página na web-->
+    <style>    /*Tag do CSS*/
+    body{ /*mudando cor,fonte e arrumando um pouco o espaçamento da página*/
+        margin: 0;
+        padding: 0;
+        background-color:crimson;
+        font-family:Arial, Helvetica, sans-serif;
+        color: white;
+        font-style:unset;
+        text-align:center;
+    }
+    header{ /*alinhando a cor do cabeçalho com a cor da página e mudando a cor da fonte do menu*/
+        background-color:white;
+        color: darkred;
+    }
+    .container{ /*a classe para o container grid*/
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+    }
+     a { /*estilizando a fonte do menu*/
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 23px;
+        color:darkred ;
+        text-decoration: none;
+        padding: 20px 15px;
+        border-radius: 50%;
+    }
+     a:hover{ /*mudar a cor do texto do menu quando passar o cursor por cima*/
+        color:darkblue;
+    }
+    .topo{ /*estilizando o meu nome que ficará no topo da página*/
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 5000;
+        font-size: 40px;
+        border-radius: 50%;
+        color:darkblue;
+        position:absolute;
+        padding: 0px 0px 0px;
+    }
+    .menuInicio{ /*fundo do meu banner de ínicio da página*/
+        background-image: url(Imagens/fundo.avif);
+        padding: 150px 100px;
+    }
+    .form, #contato{ /*estilizando a seção de contato*/
+        text-align: left;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: 5000;
+    }
+    button{ /*estilizando o botão*/
+        padding: 5px 10px;
+        border: none;
+        cursor: pointer;
+    }
+    button:hover{ /*estilizando o botão quando passar o cursor por cima*/
+        background-color:darkblue;
+        color: white;
+    }
+    .site{ /*mundando cor e fonte do link para o github*/
+        color:yellow;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    footer{ /*estilizando o rodapé*/
+        background-color: white;
+        color: darkblue;
+    }
+    
+    h1{ /*estilizando o texto oque aparecce no meu banner de ínicio da página*/
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 50px;
+            text-align: center;
+            color:darkblue;
+            font-weight: bolder;
+        }
+    ul{ /*persalizando a lista não ordenada*/
+        list-style: none;
+        margin: 0;
+        padding: 12px;
+        display: flex;
+        justify-content: center;
+    }
+    li{ /*espaçando as opções do menu*/
+        margin: 12px;
+        padding: 0;
+    }
+    </style>
+
+</head>
+<body>
+    <header>  <!--Cabeçalho-->
+        <div id="menuInicio" class="container">
+            <h1 class="topo">-Eliel-</h1>    <!--Colocando meu nome no topo da página-->
+            <ul> <!--Menu inicial com as 4 opções de navegação da página-->
+                <li><a href="#sobremim"> -SOBRE MIM- </a></li>
+                <li><a href="#formacoes"> -FORMAÇÕES- </a></li>
+                <li><a href="#portifolio"> -PORTIFÓLIO- </a></li>
+                <li><a href="#contato"> -CONTATO- </a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="menuInicio"> <!--Seção inicial do meu site-->
+        <h1>Olá, meu nome é Eliel!<br>Seja bem-vindo ao meu portifólio!</h1>
+    </section>
+    <section id="sobremim" class="container"> <!--Seção com detalhes sobre mim-->
+        <h2>-SOBRE MIM:</h2>
+        <p>-Meu nome é Eliel Tomaz de Aquino Filho<br>-Tenho 23 anos e sou de Recife-PE.<br>-Desde muito jovem sou apaixonado por tecnologia, principalmente a área de jogos.<br>-Por influência familiar, decidi começar a fazer o curso de Análise e Desenvolvimento de Sistemas e começar a trabalhar com a área de T.I.</p>
+    </section>
+    <section id="formacoes" class="container"> <!--Seção com informações sobre minhas formações-->
+        <h2>-FORMAÇÕES:</h2>
+        <h3>>Cursos:</h3>
+        <p>-Cursando Análise e Desenvolimento de Sitemas na Uninter<br>-Cursando Engenharia de Alimentos na UFPE</p>
+        <h3>>Idiomas:</h3>
+        <p>Português -- Nativo<br>Inglês -- Básico<br>Espanhol -- Iniciante</p>
+    </section>
+    <section id="portifolio" class="container"> <!--Seção com meu portifólio-->
+        <h2>-PORTIFÓLIO:</h2>
+        <a class="site" href="https://github.com/ElielTomaz" target="_blank">>>Meu GitHub<<</a>
+    </section>
+    <section id="contato" class="container"> <!--Seção com o formulário para contato, com os inputs-->
+        <h2>-ENTRE EM CONTATO:</h2>
+        <form action="" method="">
+            <table class="form">
+                <tr>
+                    <th><label for="nome">>Nome:</label></th>
+                    <td><input type="text" name="nome" id="nome" placeholder="Digite o seu nome ..."></td>
+                </tr>
+                <tr>
+                    <th><label for="email">>E-Mail:</label></th>
+                    <td><input type="email" name="email" id="email" placeholder="Digite o seu e-mail..."></td>
+                </tr>
+                <tr>
+                    <th><label for="mensagem">>Mensagem:</label></th>
+                    <td><textarea name="mensagem" rows="6" cols="45" placeholder="Deixe a sua mensagem..."></textarea></td>
+                </tr>
+                <tr>
+                    <td><button>Enviar</button></td> <!--Botão para enviar os dados-->
+                </tr>
+            </table>
+        </form>
+    </section>
+    <footer class="container">Eliel Tomaz 2023</footer> <!--rodapé-->
+</body>
+</html>
